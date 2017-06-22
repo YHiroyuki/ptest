@@ -6,3 +6,8 @@ class Error(Exception):
     def __init__(self, err_msg, **kwargs):
         super(Error, self).__init__(err_msg)
 
+
+class FileOpenError(Error):
+
+    def __init__(self, err_msg, file_path, **kwargs):
+        super(FileOpenError, self).__init__(err_msg)
