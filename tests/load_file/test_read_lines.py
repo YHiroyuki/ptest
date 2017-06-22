@@ -11,8 +11,8 @@ def describe_read_lines_by_files():
         result = read_lines_by_file_path(file_path)
         assert result
 
-
     def when_shift_jis_file():
+        # TODO Windowsからshift-jisのファイルを作る
         pass
 
     def test_not_exists_file():
