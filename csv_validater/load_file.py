@@ -3,6 +3,7 @@ import csv
 
 from csv_validater import errors
 
+
 def read_lines_by_file_path(file_path):
     """ ファイルパスからUTF-8 Shift-jisのファイルを読み込む
     Args:
