@@ -25,3 +25,15 @@ def read_lines_by_file_path(file_path):
     finally:
         if f is not None:
             f.close()
+
+
+def parse_csv_lines(file_path):  # FIXME 関数名
+    """ ファイルパスからcsvファイルを分割して取得する
+    Args:
+        file_path: 読み込むcsvファイルパス
+    """
+    lines = read_lines_by_file_path(file_path)
+
+    csv_reader = csv.reader(lines)
+
+    return list(csv_reader)  # TODO iterateしているのでこの時点で辞書にすべきかも
